@@ -32,7 +32,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     mailfrom = 'Mail From: <morganbusiness@yahoo.com>\r\n'
     clientSocket.send(mailfrom.encode())
     recv2 = clientSocket.recv(1024).decode()
-    #print("After MAIL FROM command: " + recv2)
+    print("After MAIL FROM command: " + recv2)
     #if recv2[:3] != '250':
         #print('250 reply not received from server.')    # Fill in end
 
